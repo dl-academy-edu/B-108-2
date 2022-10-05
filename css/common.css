@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #2C3036;
+    margin: 0;
+}
+
+.undotted {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    max-width: 1180px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.button {
+    background: #008752;
+    color: #fff;
+    display: block;
+    width: 181px;
+    padding: 11px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+}
+
+.footer {
+    background: #00559D;
+}
