@@ -1,2 +1,88 @@
+.banner {
+    background: url('../img/fon.jpg') bottom right no-repeat #E0E7ED;
+    /* background-image: url('../img/fon.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #E0E7ED;
+    background-size: cover; */
+    margin-bottom: 80px;
+}
+
+.banner .wrapper {
+    /* padding: 143px 0 286px; */
+    padding-top: 143px;
+    padding-bottom: 286px;
+}
+
+.banner__title {
+    font-weight: 900;
+    font-size: 90px;
+    line-height: 100%;
+    color: #00559D;
+    margin: 0;
+    margin-bottom: 65px;
+    width: 80%;
+}
+
+.banner__button {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    width: auto;
+    padding: 16px 55px;
+}
 
 
+/* SERVICES */
+
+.services {
+    margin-bottom: 110px;
+}
+
+.services__title {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 50px;
+    text-transform: uppercase;
+    color: #00559D;
+    text-align: center;
+}
+
+.services__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+}
+
+.services__item {
+    width: 280px;
+    margin: 10px;
+}
+
+/* ABOUT */
+
+.about {
+    display: flex;
+    margin-bottom: 106px;
+}
+
+
+.about__title {
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 100%;
+    color: #005DAB;
+    margin: 0;
+    margin-bottom: 46px;
+}
+
+/* AWARDS */
+
+.awards {
+    margin-bottom: 0;
+}
+
+.awards__list {
+    display: flex;
+    justify-content: space-between;
+}
