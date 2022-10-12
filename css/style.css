@@ -64,8 +64,19 @@
 .about {
     display: flex;
     margin-bottom: 106px;
+    position: relative;
 }
 
+.about:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50px;
+    right: -60px;
+    width: 570px;
+    height: 499px;
+    background: #008752;
+}
 
 .about__title {
     font-weight: 900;
@@ -75,6 +86,11 @@
     margin: 0;
     margin-bottom: 46px;
 }
+
+.about__img {
+    z-index: 1;
+}
+
 
 /* AWARDS */
 
