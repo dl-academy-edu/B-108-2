@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/style.css">
 
@@ -39,6 +40,14 @@
     </header>
 
     <main>
+
+        <audio width="480" controls>
+            <source src="https://archive.org/download/BrightSkyAndClouds/SkyAndCloudsh264.mp4" type="video/mp4">
+            <source src="https://archive.org/download/BrightSkyAndClouds/SkyAndCloudsPhotojpeg.mov" type="video/mov">
+            <source src="https://archive.org/download/BrightSkyAndClouds/SkyAndCloudsWebm.webm" type="video/webm">
+          </audio>
+
+
         <section class="banner">
             <div class="wrapper">
                 <h1 class="banner__title">The world’s leading cleaning company</h1>
@@ -128,7 +137,11 @@
             </div>
         </div>
         
-        <img src="img/map.jpg" alt="#" class="map__img">
+        <!-- <img src="img/map.jpg" alt="#" class="map__img"> -->
+
+        <!-- <iframe class="map__img" src="https://yandex.ru/map-widget/v1/?um=constructor%3A2b411edf2f57154fe9d425d719c7bdbbc0172e399e7e791e5215534b9f990004&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe> -->
+
+        <iframe class="map__img" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7478.968086088985!2d35.06703470842325!3d48.49077822368374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbe29d93933e3f%3A0x297b8e158baf8cd5!2z0YPQuy4g0KHRgtC10L_QsNC90LAg0KDQsNC30LjQvdCwLCDQlNC90LXQv9GALCDQlNC90LXQv9GA0L7Qv9C10YLRgNC-0LLRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwg0KPQutGA0LDQuNC90LAsIDQ5MDAw!5e0!3m2!1sru!2sru!4v1666019549990!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </article>
 
     <footer class="footer">
@@ -136,14 +149,14 @@
             <p>Subscribe to our social networks</p>
             <ul class="social undotted">
                 <li>
-                    <a href="#" class="social__link">
+                    <a href="#" class="social__link" aria-label="Facebook">
                         <svg width="60" height="58" viewBox="0 0 60 58" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M37.2118 20.1067V15.2733H32.7059C28.9836 15.2733 26.4368 18.3667 26.4368 22.2333V24.94H21.735V29.3867H26.4368V42.92H31.7263V29.3867H37.2118V24.94H31.7263V21.8467C31.7263 20.88 32.3141 20.3 32.9018 20.3H37.2118V20.1067ZM30.1591 0C46.4195 0 59.5454 12.9533 59.5454 29C59.5454 45.0467 46.4195 58 30.1591 58C13.8986 58 0.772705 45.0467 0.772705 29C0.772705 12.9533 13.8986 0 30.1591 0Z" fill="white"/>
                             </svg>                            
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="social__link">
+                    <a href="#" class="social__link"  aria-label="Tw">
                         <svg width="60" height="58" viewBox="0 0 60 58" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M41.8822 23.78C43.0577 23.0067 44.0372 22.04 44.8209 20.88C43.8413 21.2667 42.6659 21.6533 41.4904 21.8467C42.6659 21.0733 43.6454 20.1067 44.0372 18.7533C42.8618 19.3333 41.6863 19.9133 40.315 20.1067C39.3354 18.9467 37.7681 18.3667 36.005 18.3667C32.8704 18.3667 30.1277 20.88 30.1277 24.1667C30.1277 24.5533 30.1277 25.1333 30.3236 25.52C25.4259 25.3267 21.3118 23.0067 18.3731 19.5267C17.7854 20.3 17.5895 21.2667 17.5895 22.4267C17.5895 24.36 18.569 26.1 20.1363 27.26C19.1568 27.26 18.3731 27.0667 17.5895 26.4867C17.5895 29.1933 19.5486 31.5133 22.2913 32.0933C21.8995 32.2867 21.3118 32.2867 20.724 32.2867C20.3322 32.2867 19.9404 32.2867 19.5486 32.0933C20.3322 34.4133 22.4872 35.96 25.034 36.1533C23.075 37.7 20.5281 38.6667 17.7854 38.6667C17.3936 38.6667 16.8059 38.6667 16.414 38.6667C18.9609 40.2133 22.0954 41.18 25.23 41.18C35.809 41.18 41.6863 32.48 41.6863 24.94C41.8822 24.1667 41.8822 23.9733 41.8822 23.78ZM29.9318 0C46.1922 0 59.3181 12.9533 59.3181 29C59.3181 45.0467 46.1922 58 29.9318 58C13.6713 58 0.54541 45.0467 0.54541 29C0.54541 12.9533 13.6713 0 29.9318 0Z" fill="white"/>
                             </svg>
@@ -151,7 +164,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="social__link">
+                    <a href="#" class="social__link" aria-label="Vk">
                         <svg width="60" height="58" viewBox="0 0 60 58" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M12.0727 28.42C11.6808 33.2533 15.0113 38.0867 19.7131 39.8267C24.4149 41.5667 30.2922 40.4067 33.4267 36.3467C35.3858 33.8333 35.7777 30.5467 35.5817 27.4533C35.5817 27.4533 27.9413 27.4533 24.0231 27.4533C24.0231 28.8067 24.0231 30.16 24.0231 31.32C26.374 31.32 28.529 31.32 30.8799 31.32C29.9004 36.1533 23.0436 37.8933 19.3213 34.6067C15.599 31.7067 15.7949 25.7133 19.7131 23.0067C22.4558 20.88 26.374 21.46 29.1167 23.2C30.0963 22.2333 31.2718 21.2667 32.2513 20.1067C29.9004 18.3667 27.1577 17.2067 24.219 17.2067C17.9499 17.2067 12.2686 22.4267 12.0727 28.42ZM45.3772 23.2H41.459C41.459 24.5533 41.459 25.7133 41.459 27.0667C40.0877 27.0667 38.9122 27.0667 37.5408 27.0667V30.9333C38.9122 30.9333 40.0877 30.9333 41.459 30.9333C41.459 32.2867 41.459 33.4467 41.459 34.8H45.3772C45.3772 33.4467 45.3772 32.2867 45.3772 30.9333C46.7486 30.9333 47.924 30.9333 49.2954 30.9333V27.0667C47.924 27.0667 46.7486 27.0667 45.3772 27.0667C45.3772 25.7133 45.3772 24.5533 45.3772 23.2ZM29.7045 0C45.9649 0 59.0908 12.9533 59.0908 29C59.0908 45.0467 45.9649 58 29.7045 58C13.444 58 0.318115 45.0467 0.318115 29C0.318115 12.9533 13.444 0 29.7045 0Z" fill="white"/>
                             </svg>
