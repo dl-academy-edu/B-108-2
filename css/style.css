@@ -10,7 +10,7 @@
 
 .banner .wrapper {
     /* padding: 143px 0 286px; */
-    padding-top: 143px;
+    padding-top: 154px;
     padding-bottom: 286px;
 }
 
@@ -57,6 +57,10 @@
 .services__item {
     width: 280px;
     margin: 10px;
+}
+
+.services__item:hover .services__heading {
+    text-decoration: underline;
 }
 
 /* ABOUT */
